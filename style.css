@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #afafeb;
+}
+
+header {
+  width: 100vw;
+  height: 20vh;
+  position: relative;
+}
+
+header .header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.5rem;
+  color: #e0e0e0;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-15%, -50%);
+  text-shadow: 0 0 3px #252525cc;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.info-container {
+  padding: 0 10px;
+}
+
+.info-container h2 {
+  margin-bottom: 0.1em;
+}
+
+.info-container p {
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+a.btn-confirm {
+  margin-block: 10px;
+  display: block;
+  text-align: center;
+  padding-block: 1.5rem;
+  background-image: url("https://i.pinimg.com/originals/87/93/b7/8793b7f3009c87baf350de82a5f72423.jpg");
+  background-size: cover;
+  border: none;
+  color: #e0e0e0;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #252525;
+}
+
+.counter {
+  margin-top: 2rem;
+  background-color: #e0e0e0;
+  padding-block: 1rem 1.5rem;
+  padding-inline: 10px;
+}
+
+.counter-container h2 {
+  margin-top: 0;
+}
+
+.container-counter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-counter div {
+  text-align: center;
+}
+
+.container-counter div span {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.map-container {
+  margin-top: 2rem;
+  height: 30vh;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.separator {
+  display: flex;
+  align-items: end;
+  font-size: 2rem;
+  animation: blinking 1s ease infinite;
+}
+
+@media (min-width: 990px) {
+  .info-container {
+    padding: unset;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    color: initial;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: initial;
+  }
+}
